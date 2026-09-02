@@ -6,8 +6,8 @@ services:
     expose:
       - "6767"
     environment:
-      PASEO_PASSWORD: ${PASEO_PASSWORD}
-      PASEO_HOSTNAMES: ${PASEO_HOSTNAMES}
+      PASEO_PASSWORD: ${PASEO_PASSWORD:-password}
+      PASEO_HOSTNAMES: ${PASEO_HOSTNAMES:-localhost}
     volumes:
       - paseo-home:/home/paseo
       - workspace:/workspace

@@ -3,7 +3,9 @@ services:
     build: .
     container_name: paseo
     restart: unless-stopped
-    ports: ["5173:5173"]
+    ports:
+      - "5173:5173"
+      - "6767:6767"
     expose:
       - "6767"
     environment:

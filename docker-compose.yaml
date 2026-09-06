@@ -13,7 +13,7 @@ services:
       PASEO_HOSTNAMES: ${PASEO_HOSTNAMES:-localhost}
     volumes:
       - paseo-home:/home/paseo
-      - ./paseo/config.json:home/paseo/.paseo/config.json
+      - ./paseo/config.json:/home/paseo/.paseo/config.json
       - workspace:/workspace
 
 volumes:
